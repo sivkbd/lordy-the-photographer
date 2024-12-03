@@ -1,0 +1,274 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ccc;
+}
+
+/* Header Styling */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    margin-bottom: -1%;
+    /* Remove space below the header */
+}
+
+.header-image {
+    width: 100px;
+    /* Adjust size */
+    height: auto;
+}
+
+.header-title {
+    font-size: 28px;
+    /* Adjust title size */
+    font-weight: bold;
+    margin-left: 20px;
+    /* Space between image and title */
+}
+
+.header button {
+    background-color: #008CBA;
+    /* Blue button color */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    margin-left: 10px;
+}
+
+.header button:hover {
+    background-color: #005f73;
+    /* Darker blue on hover */
+}
+
+/* Page 1 - Content and Image Slider */
+.page1 .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.page1 .content p {
+    font-size: 28px;
+    /* Paragraph font size */
+    line-height: 1.6;
+    word-wrap: break-word;
+    max-width: 800px;
+    /* Optional: Ensures paragraphs do not stretch across the entire width */
+}
+
+.page1 .slider {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    height: 1400px;
+    justify-content: center;
+    position: relative;
+    border-radius: 5px;
+    margin-top: 0;
+    /* Remove space above the slider */
+    padding: 0;
+    /* Remove padding */
+}
+
+.page1 img {
+    width: 50%;
+    /* Make the image stretch the entire width of the screen */
+    height: 100%;
+    object-fit: cover;
+    /* Keep images proportional and avoid distortion */
+    border-radius: 5px;
+}
+
+/* Page 2 - Photography Services Section */
+.photography-services {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.photography-services h2 {
+    margin-bottom: 20px;
+}
+
+.services-images {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.service {
+    text-align: center;
+}
+
+.service img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+/* Contact Info Section (Social Media & Address) */
+.contact-info {
+    margin-top: 30px;
+    font-size: 26px;
+}
+
+.contact-info h3 {
+    margin-bottom: 10px;
+}
+
+.contact-info p {
+    margin-bottom: 5px;
+}
+
+.contact-info a {
+    color: #008CBA;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+/* Contact Form */
+.contact-form {
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.h2 {
+    text-align: center;
+    justify-content: center;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.contact-form input[type="submit"] {
+    background-color: #008CBA;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.contact-form input[type="submit"]:hover {
+    background-color: #005f73;
+}
+
+/* Page Styles */
+.page {
+    display: none;
+    padding: 20px;
+}
+
+.page1 {
+    display: block;
+}
+
+.page2 {
+    display: none;
+}
+
+/* Slider Styles */
+.slider {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+}
+
+.slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Active Slide */
+.slide.active {
+    opacity: 1;
+}
+
+/* Page Transitions */
+.page1.fade-in {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.page2.fade-out {
+    display: block;
+    opacity: 1;
+    transition: opacity 1s ease-in-out;
+}
+
+.page2 {
+    display: block;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .header-image {
+        margin-bottom: 10px;
+    }
+
+    .header-title {
+        font-size: 24px;
+    }
+
+    .page1 .slider {
+        flex-direction: column;
+    }
+
+    .services-images {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    button {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    /* Improve spacing for smaller devices */
+    .contact-info {
+        margin-top: 20px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        width: 100%;
+    }
+}

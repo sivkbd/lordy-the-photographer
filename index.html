@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+        integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>LORDY The Photographer</title>
+</head>
+
+<body>
+    <!-- Header Section with Image and Title -->
+    <header class="header">
+        <img src="image/IMG-20241202-WA0001.jpg" alt="Image 0" class="header-image">
+        <h1 class="header-title">LORDY The Photographer</h1>
+        <button id="book-now-button">Book Now</button>
+        <button id="home-button">Home</button>
+    </header>
+
+    <!-- Page 1: Initial Page (Image Slider) -->
+    <div class="page page1">
+
+        <div class="slider">
+            <div class="slide active">
+                <img src="image/Screenshot_20241201_113030_WhatsApp.jpg" alt="Image 1">
+            </div>
+            <div class="slide">
+                <img src="image/Screenshot_20241201_113041_WhatsApp.jpg" alt="Image 2">
+            </div>
+            <div class="slide">
+                <img src="image/IMG-20241202-WA0004.jpg" alt="Image 2">
+            </div>
+            <div class="slide">
+                <img src="image/IMG-20241202-WA0006.jpg" alt="Image 3">
+            </div>
+        </div>
+
+        <!-- Content Below the Slider -->
+        <div class="content">
+            <h1>LORDY The Photographer</h1>
+            <p>
+                LORDY The Photographer is a premium photography service dedicated to capturing life's most precious
+                moments with a unique and artistic touch. Specializing in portrait, event, and lifestyle photography,
+                LORDY The Photographer creates stunning, timeless images that tell your personal story. Whether you're
+                celebrating a special occasion, looking to enhance your professional image, or simply preserving
+                memories.
+            </p>
+            <img src="image/Screenshot_20241201_113359_WhatsApp.jpg" alt="image 4" />
+            <p>
+                LORDY brings a creative eye and meticulous attention to detail. With a passion for the art of
+                photography and a commitment to excellence, LORDY The Photographer ensures that every shot is a
+                masterpiece that you'll cherish for years to come.
+            </p>
+        </div>
+    </div>
+
+    <!-- Page 2: Contact Us and Services -->
+    <div class="page page2">
+        <!-- Photography Services -->
+        <div class="photography-services">
+            <h2>Types of Photography</h2>
+            <div class="services-images">
+                <div class="service portrait">
+                    <img src="image/IMG-20241202-WA0011.jpg" alt="Portrait Photography">
+                    <p>Portrait Photography</p>
+                </div>
+                <div class="service portrait">
+                    <img src="image/Screenshot_20241201_113404_WhatsApp.jpg" alt="Portrait Photography">
+                    <p>Portrait Photography</p>
+                </div>
+                <div class="service event">
+                    <img src="image/IMG-20241202-WA0004.jpg" alt="Event Photography">
+                    <p>Event Photography</p>
+                </div>
+                <div class="service event">
+                    <img src="image/IMG-20241202-WA0007.jpg" alt="Event Photography">
+                    <p>Event Photography</p>
+                </div>
+                <div class="service lifestyle">
+                    <img src="image/IMG-20241202-WA0009.jpg" alt="Lifestyle Photography">
+                    <p>Lifestyle Photography</p>
+                </div>
+                <div class="service lifestyle">
+                    <img src="image/IMG-20241202-WA0008.jpg" alt="Lifestyle Photography">
+                    <p>Lifestyle Photography</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Contact Form with WhatsApp button -->
+        <div class="contact-form">
+            <h2>Contact Us</h2>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required><br><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br><br>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea><br><br>
+
+                <!-- WhatsApp send button -->
+                <a href="https://wa.me/0710646561?text=Hello%20I%20would%20like%20to%20inquire%20about%20your%20services."
+                    target="_blank">
+                    <input type="button" value="Send via WhatsApp">
+                </a>
+            </form>
+        </div>
+
+        <!-- Social Media Links and Address -->
+        <div class="contact-info">
+            <h3>Follow Us</h3>
+            <p><a href="mailto:Lwandilelalisto@gmail.com">Email: Lwandilelalisto@gmail.com</a></p>
+            <p><a href="https://www.facebook.com/Lwandilebhonyolalisto" target="_blank">Facebook:
+                    Lwandilebhonyolalisto</a></p>
+            <p><a href="https://www.instagram.com/lordythephotographer" target="_blank">Instagram:
+                    lordythephotographer</a></p>
+            <p><strong>Address:</strong> 5004 Liwani St, George, Western Cape</p>
+        </div>
+
+
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
