@@ -9,6 +9,11 @@ body {
     background-color: #ccc;
 }
 
+h4 {
+    font-size: 20px;
+    text-align: center;
+}
+
 /* Header Styling */
 .header {
     display: flex;
@@ -16,7 +21,7 @@ body {
     justify-content: space-between;
     padding: 20px;
     background-color: #333;
-    color: white;
+    color: rgb(255, 215, 104);
     margin-bottom: -1%;
     /* Remove space below the header */
 }
@@ -119,6 +124,11 @@ body {
     border-radius: 5px;
 }
 
+.h2 {
+    text-align: center;
+    justify-content: center;
+}
+
 /* Contact Info Section (Social Media & Address) */
 .contact-info {
     margin-top: 30px;
@@ -145,25 +155,25 @@ body {
 /* Contact Form */
 .contact-form {
     margin-top: 20px;
-    font-size: 20px;
-}
-
-.h2 {
-    text-align: center;
-    justify-content: center;
-}
-
-.contact-form form {
+    font-size: 26px;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    max-width: 600px;
+    /* Set a max width for the form */
+    margin: 0 auto;
+    /* This will center the form horizontally */
 }
 
 .contact-form input,
 .contact-form textarea {
     padding: 10px;
-    margin: 10px 0;
     border-radius: 5px;
     border: 1px solid #ccc;
+    width: 100%;
+    /* Adjust width as needed */
 }
 
 .contact-form input[type="submit"] {
@@ -171,6 +181,7 @@ body {
     color: white;
     border: none;
     cursor: pointer;
+    padding: 10px 20px;
 }
 
 .contact-form input[type="submit"]:hover {
