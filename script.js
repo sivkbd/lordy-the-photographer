@@ -56,3 +56,16 @@ document.addEventListener("DOMContentLoaded", function () {
     page1.style.opacity = 1;
     page2.style.opacity = 0;
 });
+
+
+const labels = document.querySelectorAll('.form-control label');
+
+labels.forEach((label) => {
+    label.innerHTML = label.innerText
+        .split('')
+        .map(
+            (letter, idx) =>
+                `<span style="transition-delay:${idx * 50}ms">${letter}</span>`
+        )
+        .join('');
+});

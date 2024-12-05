@@ -249,6 +249,16 @@ h4 {
     display: block;
 }
 
+.enquiries {
+    font-size: 26px;
+
+}
+
+.enquiries a {
+    color: #008CBA;
+
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
 

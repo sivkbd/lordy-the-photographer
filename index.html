@@ -4,6 +4,8 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Link to Favicon -->
+    <link rel="icon" href="image/logo.png" type="image/png" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
         integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -17,13 +19,15 @@
         <img src="image/IMG-20241202-WA0001.jpg" alt="Image 0" class="header-image">
         <h1 class="header-title">LORDY The Photographer</h1>
         <button id="book-now-button">Book Now</button>
-        <button id="admin">Admin</button>
+        <!-- Admin Button with Link to login.html -->
+        <a href="login.html">
+            <button id="admin">Admin</button>
+        </a>
         <button id="home-button">Home</button>
     </header>
 
     <!-- Page 1: Initial Page (Image Slider) -->
     <div class="page page1">
-
         <div class="slider">
             <div class="slide active">
                 <img src="image/Screenshot_20241201_113030_WhatsApp.jpg" alt="Image 1">
@@ -99,22 +103,26 @@
                 target="_blank">
                 <input type="button" value="Send via WhatsApp">
             </a>
-
         </div>
 
-        <!-- Social Media Links and Address -->
+        <!-- Enquiries Section -->
+        <div class="enquiries">
+            <h5>Enquiries</h5>
+            <p><a href="mailto:Lwandilelalisto@gmail.com"><i class="fa-solid fa-envelope"></i> Email</a></p>
+        </div>
+
+        <!-- Social Media Links with Icons -->
         <div class="contact-info">
-            <h3>Follow Us</h3>
-            <p><a href="mailto:Lwandilelalisto@gmail.com">Email: Lwandilelalisto@gmail.com</a></p>
-            <p><a href="https://www.facebook.com/Lwandilebhonyolalisto" target="_blank">Facebook:
-                    Lwandilebhonyolalisto</a></p>
-            <p><a href="https://www.instagram.com/lordythephotographer" target="_blank">Instagram:
-                    lordythephotographer</a></p>
+            <h3>Follow Me</h3>
+            <!-- Social media links with Font Awesome icons -->
+            <p><a href="https://www.facebook.com/Lwandilebhonyolalisto" target="_blank"><i
+                        class="fa-brands fa-facebook"></i> Facebook</a></p>
+            <p><a href="https://www.instagram.com/lordythephotographer" target="_blank"><i
+                        class="fa-brands fa-instagram"></i> Instagram</a></p>
             <p><strong>Address:</strong> 5004 Liwani St, George, Western Cape</p>
         </div>
-
-
     </div>
+
     <h4>Website created by- Siviwe kibido</h4>
     <script src="script.js"></script>
 </body>

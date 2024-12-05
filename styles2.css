@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: rgb(173, 173, 161);
+    color: #ebd9d9;
+    overflow-x: hidden;
+    margin: 0;
+    background-image: url(https://images.unsplash.com/photo-1516918648383-53b95b297c39?q=80&w=1032&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 80vw;
+}
+
+.container {
+    background-color: rgba(5, 2, 2, 0.521);
+    padding: 20px 40px;
+    border-radius: 5px;
+}
+
+.container h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.container a {
+    text-decoration: none;
+    color: rgb(8, 177, 233);
+}
+
+.login {
+    cursor: pointer;
+    display: inline-block;
+    width: 100%;
+    font-weight: bold;
+    padding: 15px;
+    font-family: inherit;
+    font-size: 16px;
+    border: 0;
+    border-radius: 5px;
+    background-color: rgb(85, 132, 146);
+}
+
+.login:focus {
+    outline: 0;
+}
+
+.login:active {
+    transform: scale(0.98);
+}
+
+.text {
+    margin-top: 30px;
+}
+
+.login-container {
+    position: relative;
+    margin: 20px 0 40px;
+    width: 300px;
+}
+
+.login-container input {
+    background-color: transparent;
+    border: 0;
+    border-bottom: 2px #fff solid;
+    display: block;
+    width: 100%;
+    padding: 15px 0;
+    font-size: 15px;
+    color: #fff;
+}
+
+.login-container input:focus,
+.login-container input:valid {
+    outline: 0;
+    border-bottom-color: rgb(100, 132, 143);
+
+}
+
+.login-container label {
+    position: absolute;
+    top: 15px;
+    left: 0;
+}
+
+.login-container label span {
+    display: inline-block;
+    font-size: 18px;
+    min-width: 5px;
+    transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.login-container input:focus+label span,
+.login-container input:invalid+label span {
+    color: rgba(109, 138, 148, 0.993);
+    transform: translateY(-30px);
+}
