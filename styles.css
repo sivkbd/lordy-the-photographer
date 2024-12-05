@@ -168,18 +168,21 @@ h4 {
     /* This will center the form horizontally */
 }
 
-.contact-form input,
-.contact-form textarea {
+.contact-form input {
+    font-size: 18px;
+    background-color: rgb(189, 178, 141);
+    font-weight: bold;
     padding: 10px;
     border-radius: 5px;
-    border: 1px solid #ccc;
+    border: 1px solid #d1b6b6;
     width: 100%;
     /* Adjust width as needed */
 }
 
+
 .contact-form input[type="submit"] {
-    background-color: #008CBA;
-    color: white;
+    background-color: #0c5f7a;
+    color: rgb(172, 28, 28);
     border: none;
     cursor: pointer;
     padding: 10px 20px;
