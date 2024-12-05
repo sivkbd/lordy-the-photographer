@@ -38,7 +38,7 @@ body {
     color: rgb(8, 177, 233);
 }
 
-.login {
+.btn {
     cursor: pointer;
     display: inline-block;
     width: 100%;
@@ -51,11 +51,11 @@ body {
     background-color: rgb(85, 132, 146);
 }
 
-.login:focus {
+.btn:focus {
     outline: 0;
 }
 
-.login:active {
+.btn:active {
     transform: scale(0.98);
 }
 
@@ -63,13 +63,13 @@ body {
     margin-top: 30px;
 }
 
-.login-container {
+.form-control {
     position: relative;
     margin: 20px 0 40px;
     width: 300px;
 }
 
-.login-container input {
+.form-control input {
     background-color: transparent;
     border: 0;
     border-bottom: 2px #fff solid;
@@ -80,28 +80,28 @@ body {
     color: #fff;
 }
 
-.login-container input:focus,
-.login-container input:valid {
+.form-control input:focus,
+.form-control input:valid {
     outline: 0;
     border-bottom-color: rgb(100, 132, 143);
 
 }
 
-.login-container label {
+.form-control label {
     position: absolute;
     top: 15px;
     left: 0;
 }
 
-.login-container label span {
+.form-control label span {
     display: inline-block;
     font-size: 18px;
     min-width: 5px;
     transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 
-.login-container input:focus+label span,
-.login-container input:invalid+label span {
+.form-control input:focus+label span,
+.form-control input:invalid+label span {
     color: rgba(109, 138, 148, 0.993);
     transform: translateY(-30px);
 }
