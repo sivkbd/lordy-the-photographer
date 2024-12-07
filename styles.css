@@ -259,6 +259,31 @@ h4 {
 
 }
 
+/* Add these styles in your styles.css */
+.upload-section {
+    margin: 20px;
+    text-align: center;
+}
+
+#image-gallery {
+    margin-top: 40px;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+}
+
+.gallery img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
 /* Responsive Design */
 @media (max-width: 768px) {
 

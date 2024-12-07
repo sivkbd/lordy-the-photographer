@@ -69,3 +69,60 @@ labels.forEach((label) => {
         )
         .join('');
 });
+
+// upload.js
+document.getElementById('image-upload-form').addEventListener('submit', function (e) {
+    e.preventDefault();
+
+    const fileInput = document.getElementById('image');
+    const file = fileInput.files[0];
+
+    if (file) {
+        // Create a new image element
+        const imgElement = document.createElement('img');
+        imgElement.src = URL.createObjectURL(file);
+        imgElement.alt = 'Uploaded Image';
+        imgElement.style.width = '200px';
+        imgElement.style.margin = '10px';
+
+        // Append the image to the gallery section
+        const gallery = document.querySelector('.gallery');
+        gallery.appendChild(imgElement);
+
+        // Optionally reset the form
+        document.getElementById('image-upload-form').reset();
+    }
+});
+
+
+//login details for the login page
+
+// script.js
+
+// Get references to the form elements
+const form = document.getElementById('login-form');
+const emailInput = document.getElementById('email');
+const passwordInput = document.getElementById('password');
+const errorMessage = document.getElementById('error-message');
+
+// Predefined correct credentials
+const correctEmail = 'siviwe.kibido@gmail.com';
+const correctPassword = '123';
+
+// Form submission handler
+form.addEventListener('submit', function (e) {
+    e.preventDefault(); // Prevent the form from submitting by default
+
+    // Get the entered email and password
+    const enteredEmail = emailInput.value;
+    const enteredPassword = passwordInput.value;
+
+    // Check if the entered credentials are correct
+    if (enteredEmail === correctEmail && enteredPassword === correctPassword) {
+        // If correct, redirect to the admin page (admin.html)
+        window.location.href = 'admin.html';  // Ensure the path is correct
+    } else {
+        // If incorrect, show the error message
+        errorMessage.style.display = 'block';
+    }
+});
