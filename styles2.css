@@ -140,6 +140,8 @@ header h1 {
 
     .container {
         padding: 20px;
+        align-items: center;
+        justify-content: center;
     }
 
     .form-control input {
