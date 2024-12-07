@@ -40,11 +40,15 @@ header h1 {
     width: 90%;
     max-width: 400px;
     margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
 .form-control {
     position: relative;
     margin-bottom: 20px;
+    width: 100%;
 }
 
 .form-control input {
@@ -111,6 +115,7 @@ header h1 {
     .container {
         width: 100%;
         padding: 15px;
+        margin: 0 auto;
     }
 
     header h1 {
@@ -118,31 +123,32 @@ header h1 {
     }
 
     .form-control input {
+        font-size: 1rem;
+        padding: 12px;
+    }
+
+    .btn {
+        font-size: 1rem;
+        padding: 15px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    .container {
+        padding: 20px;
+    }
+
+    .form-control input {
         font-size: 0.9rem;
+        padding: 10px;
     }
 
     .btn {
         font-size: 0.9rem;
         padding: 12px;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    header h1 {
-        font-size: 2rem;
-    }
-
-    .container {
-        width: 100%;
-        padding: 10px;
-    }
-
-    .form-control input {
-        font-size: 0.85rem;
-    }
-
-    .btn {
-        font-size: 0.85rem;
-        padding: 10px;
     }
 }
